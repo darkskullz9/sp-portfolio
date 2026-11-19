@@ -1,0 +1,105 @@
+.skills {
+    width: 100%;
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 4rem 1.5rem;
+}
+
+.introduction {
+    max-width: 800px;
+    margin-bottom: 5rem;
+}
+
+.eyebrow {
+    margin-bottom: 1rem;
+    font-size: 0.875rem;
+    font-weight: 600;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+}
+
+.title {
+    margin: 0;
+    font-size: clamp(2.5rem, 6vw, 4.5rem);
+    line-height: 1.1;
+}
+
+.lead {
+    max-width: 700px;
+    margin-top: 2rem;
+    font-size: 1.15rem;
+    line-height: 1.8;
+}
+
+.section {
+    margin-bottom: 4rem;
+}
+
+.sectionHeading {
+    margin-bottom: 2rem;
+}
+
+.sectionHeading h2 {
+    margin-bottom: 0.75rem;
+    font-size: 1.75rem;
+}
+
+.sectionHeading p {
+    line-height: 1.7;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 1.25rem;
+}
+
+.card {
+    padding: 1.5rem;
+    border: 1px solid #e5e5e5;
+}
+
+.card h3 {
+    margin-top: 0;
+    margin-bottom: 1rem;
+    font-size: 1.2rem;
+}
+
+.cardDescription {
+    min-height: 3.5rem;
+    line-height: 1.7;
+}
+
+.skillList {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.625rem;
+    margin: 1.5rem 0 0;
+    padding: 0;
+    list-style: none;
+}
+
+.skillList li {
+    padding: 0.5rem 0.75rem;
+    border: 1px solid #e5e5e5;
+    font-size: 0.875rem;
+    font-weight: 500;
+}
+
+@media (max-width: 700px) {
+    .skills {
+        padding: 3rem 1.25rem;
+    }
+
+    .introduction {
+        margin-bottom: 3.5rem;
+    }
+
+    .grid {
+        grid-template-columns: 1fr;
+    }
+
+    .cardDescription {
+        min-height: auto;
+    }
+}

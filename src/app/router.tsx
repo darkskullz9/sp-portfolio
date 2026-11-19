@@ -4,6 +4,8 @@ import AdminLayout from "../layouts/AdminLayout/AdminLayout";
 import PublicLayout from "../layouts/PublicLayout/PublicLayout";
 import PagePlaceholder from "../components/common/PagePlaceholder";
 import Home from "../pages/Home/Home";
+import About from "../pages/About/About";
+import Skills from "../pages/Skills/Skills";
 import NotFound from "../pages/NotFound/NotFound";
 
 const router = createBrowserRouter([
@@ -17,22 +19,12 @@ const router = createBrowserRouter([
 
             {
                 path: "/about",
-                element: (
-                    <PagePlaceholder
-                        title="À propos"
-                        description="Présentation de mon parcours et de mon profil."
-                    />
-                ),
+                element: <About />,
             },
 
             {
                 path: "/skills",
-                element: (
-                    <PagePlaceholder
-                        title="Compétences"
-                        description="Présentation de mes compétences techniques."
-                    />
-                ),
+                element: <Skills />,
             },
 
             {

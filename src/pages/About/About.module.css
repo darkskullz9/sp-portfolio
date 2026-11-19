@@ -50,7 +50,6 @@
     max-width: 750px;
     padding: 1.5rem;
     border: 1px solid #e5e5e5;
-    border-radius: 8px;
 }
 
 .content h3,
@@ -77,12 +76,10 @@
 .interest {
     padding: 1.5rem;
     border: 1px solid #e5e5e5;
-    border-radius: 8px;
 }
 
 .closing {
     padding: 2rem;
-    border-radius: 8px;
     background-color: #f5f5f5;
 }
 
@@ -93,7 +90,6 @@
     min-height: 48px;
     margin-top: 1rem;
     padding: 0.75rem 1.25rem;
-    border-radius: 6px;
     color: #ffffff;
     background-color: #222222;
     font-weight: 600;
