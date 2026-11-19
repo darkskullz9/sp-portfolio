@@ -1,10 +1,8 @@
+import { RouterProvider } from "react-router";
+import router from "./router";
+
 function App() {
-    return (
-        <main>
-            <h1>Steven Prauca</h1>
-            <p>Portfolio - BTS SIO SLAM</p>
-        </main>
-    );
+    return <RouterProvider router={router} />;
 }
 
 export default App;
