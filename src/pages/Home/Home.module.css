@@ -1,0 +1,96 @@
+.home {
+    width: 100%;
+}
+
+.hero {
+    display: flex;
+    align-items: center;
+    min-height: 70vh;
+    padding: 4rem 1.5rem;
+}
+
+.heroContent {
+    width: 100%;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.eyebrow {
+    margin-bottom: 1.5rem;
+    font-size: 0.875rem;
+    font-weight: 600;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+}
+
+.title {
+    max-width: 800px;
+    margin: 0;
+    font-size: clamp(2.5rem, 7vw, 5rem);
+    line-height: 1.1;
+}
+
+.title span {
+    display: block;
+}
+
+.description {
+    max-width: 650px;
+    margin-top: 1.5rem;
+    line-height: 1.8;
+}
+
+.actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin-top: 2rem;
+}
+
+.primaryButton,
+.secondaryButton {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 48px;
+    padding: 0.75rem 1.25rem;
+    border: 1px solid currentColor;
+    border-radius: 6px;
+    font-weight: 600;
+    transition:
+        opacity 0.2s ease,
+        transform 0.2s ease;
+}
+
+.primaryButton {
+    color: #ffffff;
+    background-color: #222222;
+    border-color: #222222;
+}
+
+.secondaryButton {
+    color: inherit;
+    background-color: transparent;
+}
+
+.primaryButton:hover,
+.secondaryButton:hover {
+    opacity: 0.8;
+    transform: translateY(-2px);
+}
+
+@media (max-width: 480px) {
+    .hero {
+        min-height: 60vh;
+        padding: 3rem 1.25rem;
+    }
+
+    .actions {
+        flex-direction: column;
+    }
+
+    .primaryButton,
+    .secondaryButton {
+        width: 100%;
+    }
+}

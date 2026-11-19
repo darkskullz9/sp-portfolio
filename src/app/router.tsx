@@ -3,6 +3,7 @@ import { createBrowserRouter } from "react-router";
 import AdminLayout from "../layouts/AdminLayout/AdminLayout";
 import PublicLayout from "../layouts/PublicLayout/PublicLayout";
 import PagePlaceholder from "../components/common/PagePlaceholder";
+import Home from "../pages/Home/Home";
 import NotFound from "../pages/NotFound/NotFound";
 
 const router = createBrowserRouter([
@@ -11,12 +12,7 @@ const router = createBrowserRouter([
         children: [
             {
                 path: "/",
-                element: (
-                    <PagePlaceholder
-                        title="Accueil"
-                        description="Bienvenue sur mon portfolio."
-                    />
-                ),
+                element: <Home />,
             },
 
             {
