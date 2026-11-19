@@ -1,0 +1,116 @@
+import { createBrowserRouter } from "react-router";
+
+import AdminLayout from "../layouts/AdminLayout/AdminLayout";
+import PublicLayout from "../layouts/PublicLayout/PublicLayout";
+import PagePlaceholder from "../components/common/PagePlaceholder";
+import NotFound from "../pages/NotFound/NotFound";
+
+const router = createBrowserRouter([
+    {
+        element: <PublicLayout />,
+        children: [
+            {
+                path: "/",
+                element: (
+                    <PagePlaceholder
+                        title="Accueil"
+                        description="Bienvenue sur mon portfolio."
+                    />
+                ),
+            },
+
+            {
+                path: "/about",
+                element: (
+                    <PagePlaceholder
+                        title="À propos"
+                        description="Présentation de mon parcours et de mon profil."
+                    />
+                ),
+            },
+
+            {
+                path: "/skills",
+                element: (
+                    <PagePlaceholder
+                        title="Compétences"
+                        description="Présentation de mes compétences techniques."
+                    />
+                ),
+            },
+
+            {
+                path: "/projects",
+                element: (
+                    <PagePlaceholder
+                        title="Projets"
+                        description="Présentation de mes réalisations."
+                    />
+                ),
+            },
+
+            {
+                path: "/experiences",
+                element: (
+                    <PagePlaceholder
+                        title="Expériences"
+                        description="Présentation de mes expériences professionnelles."
+                    />
+                ),
+            },
+
+            {
+                path: "/e5",
+                element: (
+                    <PagePlaceholder
+                        title="Épreuve E5"
+                        description="Présentation de mes réalisations professionnelles."
+                    />
+                ),
+            },
+
+            {
+                path: "/watch",
+                element: (
+                    <PagePlaceholder
+                        title="Veille technologique"
+                        description="Présentation de ma veille technologique."
+                    />
+                ),
+            },
+
+            {
+                path: "/contact",
+                element: (
+                    <PagePlaceholder
+                        title="Contact"
+                        description="Retrouve ici mes informations de contact."
+                    />
+                ),
+            },
+        ],
+    },
+
+    {
+        path: "/admin",
+        element: <AdminLayout />,
+        children: [
+            {
+                index: true,
+                element: (
+                    <PagePlaceholder
+                        title="Dashboard"
+                        description="Espace d'administration du portfolio."
+                    />
+                ),
+            },
+        ],
+    },
+
+    {
+        path: "*",
+        element: <NotFound />,
+    },
+]);
+
+export default router;
